@@ -1,0 +1,19 @@
+
+#calendar {
+	width: 700px;
+	height: 300px;
+}
+
+#month {
+	background: papayawhip;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#day {
+	background: lightcyan;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
