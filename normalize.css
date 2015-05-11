@@ -1,0 +1,27 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	background: white;
+	text-align: center;
+}
+
+table {
+	margin: 0 auto;
+	font-size: 24px;
+	border: none;
+	border-collapse: collapse;
+}
+
+table td { 
+	border-left: 1px solid gainsboro;
+	padding: 2px 10px;
+	cursor: pointer;
+}
+
+table td:first-child {
+	border-left: none;
+}
+
+th {
+	color: red;
+}

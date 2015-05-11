@@ -1,19 +1,64 @@
-
 #calendar {
 	width: 700px;
 	height: 300px;
+	border: solid black 6px;
+	border-radius: 5px;
+	box-shadow: 0 0 0 20px rgb(240,240,240);
+	margin: 0 auto;
 }
 
 #month {
-	background: papayawhip;
-	width: 50%;
-	height: 100%;
-	float: left;
+	border-left: solid black 3px;
 }
 
 #day {
-	background: lightcyan;
-	width: 50%;
+	border-right: solid black 3px;
+	background: rgb(240,240,240);
+}
+
+#today {
+	background: red;
+}
+
+#month-header {
+	color: lightgrey;
+	font-size: 32px;
+	padding: 8px;
+}
+
+#month-header div {
+	display: inline;
+	float: left;
 	height: 100%;
+}
+
+#month-name {
+	min-width: 290px;
+}
+
+#next-month {
+	cursor: pointer;
+}
+
+#previous-month {
+	cursor: pointer;
+}
+
+#weekday {
+	background: red;
+	color: white;
+	font-size: 32px;
+	padding: 8px;
+
+}
+
+#date {
+	font-size: 168px;
+	letter-spacing: -8px;
+}
+
+.calendar-section {
+	height: 100%;
+	width: 347px;
 	float: left;
 }
