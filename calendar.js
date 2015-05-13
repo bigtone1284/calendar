@@ -49,7 +49,7 @@ Calendar.prototype.monthRender = function() {
 		}
 	};
 	this.clearToday();
-	if (month === new Date().getMonth()) {
+	if (month === new Date().getMonth() && year === new Date().getFullYear()) {
 		dayCells[new Date().getDate() + firstDay - 1].id = 'today';
 	}
 };
@@ -78,7 +78,8 @@ Calendar.prototype.monthSetter = function() {
 };
 
 Calendar.prototype.isMonthToday = function() {
-	if (this.day.getMonth() === new Date().getMonth()) {
+	if (this.day.getMonth() === new Date().getMonth() &&
+		this.day.getFullYear() === new Date().getFullYear()) {
 		this.day = new Date();
 	} else {
 		this.day.setDate(1);
